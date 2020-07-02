@@ -2,7 +2,7 @@ package com.metrobus.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="records")
+@Document(collection="record")
 public class CoordF {
 
 	private Double latitude;

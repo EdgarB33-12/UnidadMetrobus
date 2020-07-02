@@ -2,7 +2,7 @@ package com.metrobus.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="records")
+@Document(collection="record")
 public class Geometry {
 
 	private String type;
@@ -19,6 +19,10 @@ public class Geometry {
 	}
 	public void setCoordG(CoordG coordinates) {
 		this.coordinates = coordinates;
+	}
+	@Override
+	public String toString() {
+		return "Geometry [type=" + type + ", coordinates=" + coordinates + "]";
 	}
 	
 }

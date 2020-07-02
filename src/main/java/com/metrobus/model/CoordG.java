@@ -2,7 +2,7 @@ package com.metrobus.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="records")
+@Document(collection="record")
 public class CoordG {
 
 	private Double latitude;
@@ -27,6 +27,11 @@ public class CoordG {
 
 	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
+	}
+
+	@Override
+	public String toString() {
+		return "CoordG [latitude=" + latitude + ", longitude=" + longitude + "]";
 	}
 	
 	

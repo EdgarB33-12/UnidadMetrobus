@@ -4,7 +4,7 @@ import java.util.Date;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="records")
+@Document(collection="record")
 public class Field {
 
 	private String 	vehicle_id;
