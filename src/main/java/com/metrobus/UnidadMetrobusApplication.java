@@ -8,6 +8,7 @@ public class UnidadMetrobusApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UnidadMetrobusApplication.class, args);
+		System.out.println("Hola mundo");
 	}
 
 }
