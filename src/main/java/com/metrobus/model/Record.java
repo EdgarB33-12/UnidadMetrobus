@@ -45,12 +45,20 @@ public class Record {
 	public void setRecord_timestamp(Date record_timestamp) {
 		this.record_timestamp = record_timestamp;
 	}
+	public Record(String datasetid, String recordid, Field field, Geometry geometry, Date record_timestamp) {
+		this.datasetid = datasetid;
+		this.recordid = recordid;
+		this.field = field;
+		this.geometry = geometry;
+		this.record_timestamp = record_timestamp;
+	}
+		
 	@Override
 	public String toString() {
 		return "Record [datasetid=" + datasetid + ", recordid=" + recordid + ", field=" + field + ", geometry="
 				+ geometry + ", record_timestamp=" + record_timestamp + "]";
 	}
-		
+
 	
 	
 }

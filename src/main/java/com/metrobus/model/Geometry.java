@@ -24,5 +24,9 @@ public class Geometry {
 	public String toString() {
 		return "Geometry [type=" + type + ", coordinates=" + coordinates + "]";
 	}
+	public Geometry(String type, CoordG coordinates) {
+		this.type = type;
+		this.coordinates = coordinates;
+	}
 	
 }

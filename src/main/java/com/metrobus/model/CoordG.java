@@ -33,6 +33,8 @@ public class CoordG {
 	public String toString() {
 		return "CoordG [latitude=" + latitude + ", longitude=" + longitude + "]";
 	}
+
+
 	
 	
 }

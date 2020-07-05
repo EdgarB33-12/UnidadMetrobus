@@ -99,6 +99,24 @@ public class Field {
 	public void setGeographic_point(CoordF geographic_point) {
 		this.geographic_point = geographic_point;
 	}
+	public Field(String vehicle_id, String trip_start_date, Date date_update, Double position_longitude,
+			Integer trip_schedule_relationship, Integer position_speed, Double position_latitude, String trip_route_id,
+			String vehicule_label, Integer position_odometer, String trip_id, Integer vehicule_current_status,
+			CoordF geographic_point) {
+		this.vehicle_id = vehicle_id;
+		this.trip_start_date = trip_start_date;
+		this.date_update = date_update;
+		this.position_longitude = position_longitude;
+		this.trip_schedule_relationship = trip_schedule_relationship;
+		this.position_speed = position_speed;
+		this.position_latitude = position_latitude;
+		this.trip_route_id = trip_route_id;
+		this.vehicule_label = vehicule_label;
+		this.position_odometer = position_odometer;
+		this.trip_id = trip_id;
+		this.vehicule_current_status = vehicule_current_status;
+		this.geographic_point = geographic_point;
+	}
 	
 	
 	
