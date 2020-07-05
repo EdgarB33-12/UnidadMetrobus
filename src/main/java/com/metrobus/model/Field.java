@@ -10,7 +10,7 @@ public class Field {
 
 	private String 	vehicle_id;
 	private String 	trip_start_date;
-	private String 	date_update;
+	private String 	date_updated;
 	private Double 	position_longitude;
 	private Integer trip_schedule_relationship;
 	private Integer	position_speed;
@@ -36,11 +36,11 @@ public class Field {
 	public void setTrip_start_date(String trip_start_date) {
 		this.trip_start_date = trip_start_date;
 	}
-	public String getDate_update() {
-		return date_update;
+	public String getDate_updated() {
+		return date_updated;
 	}
-	public void setDate_update(String date_update) {
-		this.date_update = date_update;
+	public void setDate_updated(String date_updated) {
+		this.date_updated = date_updated;
 	}
 	public Double getPosition_longitude() {
 		return position_longitude;
@@ -104,21 +104,21 @@ public class Field {
 	}
 	@Override
 	public String toString() {
-		return "Field [vehicle_id=" + vehicle_id + ", trip_start_date=" + trip_start_date + ", date_update="
-				+ date_update + ", position_longitude=" + position_longitude + ", trip_schedule_relationship="
+		return "Field [vehicle_id=" + vehicle_id + ", trip_start_date=" + trip_start_date + ", date_updated="
+				+ date_updated + ", position_longitude=" + position_longitude + ", trip_schedule_relationship="
 				+ trip_schedule_relationship + ", position_speed=" + position_speed + ", position_latitude="
 				+ position_latitude + ", trip_route_id=" + trip_route_id + ", vehicle_label=" + vehicle_label
 				+ ", position_odometer=" + position_odometer + ", trip_id=" + trip_id + ", vehicle_current_status="
 				+ vehicle_current_status + ", geographic_point=" + Arrays.toString(geographic_point) + "]";
 	}
-	public Field(String vehicle_id, String trip_start_date, String date_update, Double position_longitude,
+	public Field(String vehicle_id, String trip_start_date, String date_updated, Double position_longitude,
 			Integer trip_schedule_relationship, Integer position_speed, Double position_latitude, String trip_route_id,
 			String vehicle_label, Integer position_odometer, String trip_id, Integer vehicle_current_status,
 			double[] geographic_point) {
 		//super();
 		this.vehicle_id = vehicle_id;
 		this.trip_start_date = trip_start_date;
-		this.date_update = date_update;
+		this.date_updated = date_updated;
 		this.position_longitude = position_longitude;
 		this.trip_schedule_relationship = trip_schedule_relationship;
 		this.position_speed = position_speed;
