@@ -1,32 +1,38 @@
 package com.metrobus.model;
 
+import java.util.Arrays;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="record")
 public class Geometry {
 
 	private String type;
-	private CoordG coordinates;
-	
+	private double coordinates[] = new double[1];
+	//private CoordG coordinates;
 	public String getType() {
 		return type;
 	}
 	public void setType(String type) {
 		this.type = type;
 	}
-	public CoordG getCoordG() {
+	public double[] getCoordinates() {
 		return coordinates;
 	}
-	public void setCoordG(CoordG coordinates) {
+	public void setCoordinates(double[] coordinates) {
 		this.coordinates = coordinates;
 	}
 	@Override
 	public String toString() {
-		return "Geometry [type=" + type + ", coordinates=" + coordinates + "]";
+		return "Geometry [type=" + type + ", coordinates=" + Arrays.toString(coordinates) + "]";
 	}
-	public Geometry(String type, CoordG coordinates) {
+	public Geometry(String type, double[] geometry) {
+		//super();
 		this.type = type;
 		this.coordinates = coordinates;
 	}
+	
+
+
 	
 }
