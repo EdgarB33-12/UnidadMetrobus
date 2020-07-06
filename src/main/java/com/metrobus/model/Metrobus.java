@@ -73,7 +73,7 @@ public class Metrobus {
 
 	@Override
 	public String toString() {
-		return "Metrobus [id=" + id + ", nhits=" + nhits + ", parameters=" + parameters + ", records=" + records + "]";
+		return "Metrobus [ nhits=" + nhits + ", parameters=" + parameters + ", records=" + records + "]";
 	}
 
 	

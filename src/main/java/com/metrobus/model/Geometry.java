@@ -26,7 +26,7 @@ public class Geometry {
 	public String toString() {
 		return "Geometry [type=" + type + ", coordinates=" + Arrays.toString(coordinates) + "]";
 	}
-	public Geometry(String type, double[] geometry) {
+	public Geometry(String type, double[] coordinates) {
 		//super();
 		this.type = type;
 		this.coordinates = coordinates;

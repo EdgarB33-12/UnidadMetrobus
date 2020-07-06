@@ -15,44 +15,21 @@ public class MetrobusService {
 	@Autowired
 	private MetrobusRepository MetrobusRepository;
 	
-	/*
-	@Override
-    public List<Record> findAllRecord() {
-        return MetrobusRepository.findAllRecord();
+    public List<Metrobus> getAllList() {
+        return MetrobusRepository.findAll();
     }
-	*/
-	
+
 	//Insertar datos
 	public Metrobus create (Integer nhits, Parameter parameters, ArrayList<Record> record) {
 		return MetrobusRepository.save(new Metrobus(nhits, parameters, record) );
 	}
 	//Leer todos los registros
-	public List<Metrobus> getAll2(){
+	public List<Metrobus> getAll(){
 		return MetrobusRepository.findAll();
 	}
-	/*
-	 * CONSULTAS ESPECIFICAS
-	public Metrobus getByFirstName(String firstName) {
-		return MetrobusRepository.findByFirstName(firstName);
-	}
-	*/
-	/*
-	//Update operation
-	public Metrobus update(String firstName, String lastName, int age) {
-		Metrobus p = MetrobusRepository.findByFirstName(firstName);
-		p.setLastName(lastName);
-		p.setAge(age);
-		return MetrobusRepository.save(p);
-	}
-	*/
 	//Borrar todos los registros
 	public void deleteAll() {
 		MetrobusRepository.deleteAll();
 	}
-	/*
-	public void delete(String firstName) {
-		Metrobus p = MetrobusRepository.findByFirstName(firstName);
-		MetrobusRepository.delete(p);
-	}
-	*/
+
 }
